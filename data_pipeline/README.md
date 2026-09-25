@@ -1,5 +1,22 @@
-The scraper discovers category pages from the website and uses them to
-build the book-to-category mapping.
+project/
+│
+├── data_pipeline/
+│   ├── README.md
+│   ├── cleaner.py
+│   ├── database.py
+│   ├── pipeline.py
+│   ├── queries.py
+│   └── scraper.py
+│
+├── module2_ml/
+├── module3_genai/
+├── venv/
+├── README.md
+└── test3.ipynb
 
-For the selected 100 books from the first 5 listing pages, the final
-dataset contains 29 distinct categories.
+## End-to-End Verification
+
+The complete pipeline was executed successfully using:
+
+```bash
+python -u "data_pipeline\pipeline.py"
